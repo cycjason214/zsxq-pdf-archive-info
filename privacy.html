@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZSXQ PDF Archive 的 Google Drive 資料存取、用途、保存及撤銷授權說明。">
+  <title>隱私政策 — ZSXQ PDF Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header><a class="brand" href="./">ZSXQ PDF Archive</a><nav aria-label="主要導覽"><a href="privacy.html" aria-current="page">隱私政策</a><a href="terms.html">使用說明</a></nav></header>
+    <main class="document">
+      <p class="eyebrow">PRIVACY POLICY</p><h1>隱私政策</h1><p class="updated">更新日期：2026-10-13</p>
+      <p class="lead">ZSXQ PDF Archive 僅供擁有者本人備份指定 PDF，核對備份結果，並建立私人檔案連結索引。本政策描述歸檔工具及這個公開說明網站的資料處理方式。</p>
+      <section><h2>1. Google Drive 存取範圍</h2><p>歸檔工具使用 Google OAuth 與 rclone 存取擁有者授權的 Google Drive。目前設定使用 <code>https://www.googleapis.com/auth/drive</code>，其授權範圍包含查看、編輯、建立及刪除 Drive 檔案；這是授權能力的範圍，並不代表排程會操作所有檔案。</p><p>目前歸檔排程只上傳指定的 PDF、列出相關檔案、核對大小與內容，及讀取檔案名稱、大小、檔案 ID、雜湊值與瀏覽連結。自動刪除本機原始 PDF 的功能目前未啟用。</p></section>
+      <section><h2>2. 資料使用目的</h2><p>檔案內容及中繼資料僅用於擁有者要求的備份、完整性驗證、故障排查及日後查找。歸檔工具不將 Google API 資料用於廣告、販售或訓練通用 AI 模型。</p><p>歸檔工具對 Google API 資料的使用及傳輸遵循 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括 Limited Use 要求。</p></section>
+      <section><h2>3. 儲存位置與分享</h2><p>PDF 備份存於擁有者自己的 Google Drive。操作紀錄及連結索引存於本機；連結索引可同步至擁有者控制、已確認為私人的 GitHub 倉庫。網站使用的公開倉庫與私人報告倉庫分開。</p><p>OAuth 憑證保存在執行工具的電腦設定中，用於向 Google 取得及更新授權；不會放入本站或網站的公開原始碼。歸檔工具不會變更 Drive 的分享權限，取得瀏覽連結也不會授予檔案存取權。</p><p>Google 與 GitHub 分別提供檔案儲存及私人索引同步服務。擁有者自行授權其他工具處理報告的行為，應另行依該工具及其服務提供者的資料政策評估。</p></section>
+      <section><h2>4. 保存、刪除及撤銷授權</h2><p>備份與索引保留至擁有者自行刪除或調整保存設定。擁有者可停止本機排程，並至 <a href="https://myaccount.google.com/connections">Google 帳戶的第三方連線設定</a>移除這個工具的存取權。</p><p>撤銷授權會阻止工具繼續存取 Drive，不會自動刪除已建立的備份或索引。需要移除資料時，請分別刪除 Drive 備份、本機索引及私人 GitHub 倉庫中的相關檔案，並處理服務提供者的垃圾桶與版本保存設定。</p></section>
+      <section><h2>5. 公開說明網站</h2><p>本站是靜態說明頁，沒有登入、表單、應用程式 Cookie 或分析追蹤程式，也不會讀取訪客的 Google Drive。GitHub Pages 作為網站託管服務，可能依 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隱私聲明</a>處理 IP 位址等必要連線紀錄。</p></section>
+      <section><h2>6. 聯絡及更新</h2><p>維護者：<a href="https://github.com/cycjason214">cycjason214</a>。如需詢問本政策，可透過<a href="https://github.com/cycjason214/zsxq-pdf-archive-info/issues">網站倉庫的 Issues</a>聯絡。請勿在公開 Issue 中提交私人 PDF、檔案連結或授權憑證。</p><p>工具的資料處理方式變更時，本頁會更新內容及日期。</p></section>
+    </main>
+    <footer><a href="./">工具首頁</a><a href="privacy.html">隱私政策</a><a href="terms.html">使用說明</a></footer>
+  </div>
+</body>
+</html>
